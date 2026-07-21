@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Rutas de Transporte Urbano</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>🚌 Gestión de Rutas de Transporte</h1>
+        <p>UNEMI | Ingeniería de Software</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('rutas')">Ver Rutas</button>
+        <button onclick="mostrarSeccion('paradas')">Paradas</button>
+        <button onclick="mostrarSeccion('reportes')">Reportes</button>
+    </nav>
+
+    <main>
+        <section id="inicio" class="seccion">
+            <h2>Bienvenido al Sistema</h2>
+            <p>Plataforma para administrar rutas, horarios y monitoreo de transporte público.</p>
+            <div class="mapa-simulado">
+                🗺️ [Mapa Interactivo - Zona de Visualización]
+            </div>
+        </section>
+
+        <section id="rutas" class="seccion" style="display:none;">
+            <h2>Gestión de Rutas</h2>
+            <ul>
+                <li>Ruta 1: Centro - Norte 🟢</li>
+                <li>Ruta 2: Sur - Terminal 🔵</li>
+                <li>Ruta 3: Universidad - Aeropuerto 🔴</li>
+            </ul>
+        </section>
+
+        <section id="paradas" class="seccion" style="display:none;">
+            <h2>Paradas Principales</h2>
+            <p>📍 Plaza Principal | ⏱ 10 min aprox.</p>
+            <p>📍 Mercado Central | ⏱ 8 min aprox.</p>
+        </section>
+
+        <section id="reportes" class="seccion" style="display:none;">
+            <h2>📊 Reportes y Estadísticas</h2>
+            <p>Rutas Activas: 5 | Incidencias Hoy: 1 | Tiempo Promedio: 35 min</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autores: Nadia Castro - Héctor Álvarez | UNEMI 2026</p>
+    </footer>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
